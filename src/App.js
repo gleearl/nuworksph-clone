@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import { Button } from 'react-bootstrap';
+import './custom.scss';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Button>Primary Button</Button>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
