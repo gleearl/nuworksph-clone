@@ -9,6 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Button>Primary Button</Button>
+        <Button>Primary Button</Button>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
