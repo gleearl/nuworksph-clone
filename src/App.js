@@ -20,11 +20,9 @@ function App() {
           <Route path='terms-and-conditions' element={<TermsAndConditions/>}/>
           <Route path='privacy-policy' element={<PrivacyPolicy/>}/>
         </Routes>
-        
         <Footer/>
       </div>
     </BrowserRouter>
-    
   );
 }
 
