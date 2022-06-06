@@ -1,0 +1,58 @@
+// Navbar
+$navbar-nav-link-padding-x: 1.5rem;
+$navbar-padding-y: 1.5rem;
+$navbar-padding-x: 1.5rem;
+
+// Color
+$body-color: #fff;
+$primary: #F6C900 !default;
+$secondary: #434343;
+$warning: #fefefe;
+$cyan: #E4EFFB;
+$info: #E4EFFB;
+
+// $theme-colors: (
+//   "gray": #ccc
+// );
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap');
+$font-family-sans-serif:      "Barlow", sans-serif !default;
+$font-family-monospace:       "Barlow", monospace !default;
+
+$line-height-base:            1.75;
+$headings-line-height:        1.5;
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-semibold:        600 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+$font-weight-base:            $font-weight-normal !default;
+
+// Badges
+$badge-font-size:                   0.625rem;
+$badge-font-weight:                 $font-weight-semibold;
+$badge-padding-y:                   7px;
+$badge-padding-x:                   12px;
+$badge-border-radius:               5px;
+
+// Buttons
+$btn-border-width: 2px;
+$btn-border-radius: 0;
+
+// Nav
+$offcanvas-bg-color: $primary;
+$nav-link-color: #434343;
+$nav-link-hover-color: #000;
+
+$nav-pills-link-active-bg: none;
+
+$navbar-dark-toggler-icon-bg: url("https://nuworks.ph/static/images/lines/Frame%202.png");
+$navbar-light-toggler-icon-bg: url("https://nuworks.ph/static/images/lines/Frame%202.png");
+
+// Forms
+$form-select-bg: #1E1D1D;
+$form-select-border-color: none;

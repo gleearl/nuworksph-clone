@@ -1,27 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-import { Button } from 'react-bootstrap';
-import './custom.scss';
+import Header from './components/Header';
+import './scss/main.scss';
+import "../node_modules/slick-carousel/slick/slick.css"
+import "../node_modules/slick-carousel/slick/slick-theme.css"
+import Footer from './components/Footer';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Home from './components/Home'
+import TermsAndConditions from './components/TermsAndConditions'
+import PrivacyPolicy from './components/PrivacyPolicy'
+import WorkItem from './components/WorkItem';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Button>Primary Button</Button>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <Header/>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/:id' element={<WorkItem/>}/>
+          <Route path='terms-and-conditions' element={<TermsAndConditions/>}/>
+          <Route path='privacy-policy' element={<PrivacyPolicy/>}/>
+        </Routes>
+        <Footer/>
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,134 @@
+html {
+    height: 100%;
+}
+
+.app {
+    .fw-semibold {
+        font-weight: $font-weight-semibold !important;
+    }
+
+    .text-small {
+        font-size: 12px;
+    }
+
+    .lets-connect {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        z-index: 1;
+    }
+
+    section {
+        @include media-breakpoint-up(md) { 
+            margin-block: 85px;
+        }
+    }
+
+    .list-alpha {
+        list-style-type: lower-alpha;
+    }
+
+    .list-roman {
+        list-style-type: lower-roman;
+    }
+    
+
+    img {
+        &.heading, &.services-image, &.tech-stack-image {
+            width: 100%;
+            max-width: 500px;
+
+            @include media-breakpoint-down(md) { 
+                max-width: 300px;
+            }
+        }
+
+        &.our-work {
+            width: 650px;
+
+            @include media-breakpoint-down(md) { 
+                width: 100%;
+            }
+        }
+    }
+    
+
+    .service-item {
+        background: linear-gradient(44.39deg, rgba(255, 255, 255, 0.2) -14.6%, rgba(255, 255, 255, 0.144) 65.55%), linear-gradient(173.32deg, #888888 -39.93%, rgba(182, 182, 182, 0) 100.91%);
+        box-shadow: 0px 1px 5px 0px rgba(186, 186, 186, 0.2);
+        // margin: 0 10px;
+        height: 550px;
+        margin-inline: 4px;
+    }
+
+    .slick-dots {
+        button:before {
+            color: $primary;
+        }
+    }
+
+    
+
+    .list-services {
+        .nav-link {
+            color: #ababab;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+    }
+
+    .works {
+        .work-item {
+            width: 230px;
+
+            img {
+                object-fit: cover;
+                height: 150px
+            }
+        }
+    }
+
+    // .tech-stack {
+        
+    // }
+
+    .tech-list {
+        max-width: 1080px;
+
+        .tech-item {
+            margin: 10px;
+        }
+
+        .award-item {
+            margin: 50px;
+        }
+    }
+
+    .story {
+        img {
+            width: 400px;
+
+            &.story-img {
+                width: 550px;
+            }
+
+            &.video {
+                width: 100%;
+            }
+
+            @include media-breakpoint-down(md) { 
+                width: 100%;;
+            }
+        }
+    }
+
+    .create {
+        button {
+            clip-path: polygon(14px 0%, 100% 0%, calc(100% - 14px) 100%, 0% 100%);
+        }
+    }
+
+    .bg-gray {
+        background-color: #ccc;
+    }
+}
