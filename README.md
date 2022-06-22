@@ -6,6 +6,7 @@
 - Node SASS
 - React Router Dom
 - React Slick
+- Axios
 
 
 ### Bootstap React
@@ -20,6 +21,9 @@
 ### React Slick
 `npm install react-slick --save`
 `npm install slick-carousel --save`
+
+### Axios
+`npm install axios`
 
 
 ## Git Commands
