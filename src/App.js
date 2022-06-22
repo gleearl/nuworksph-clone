@@ -8,17 +8,19 @@ import Home from './components/Home'
 import TermsAndConditions from './components/TermsAndConditions'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import WorkItem from './components/WorkItem';
+import Connect from './components/Connect';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="app">
+      <div className="app h-100">
         <Header/>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/:id' element={<WorkItem/>}/>
           <Route path='terms-and-conditions' element={<TermsAndConditions/>}/>
           <Route path='privacy-policy' element={<PrivacyPolicy/>}/>
+          <Route path='lets-connect' element={<Connect/>}/>
         </Routes>
         <Footer/>
       </div>
